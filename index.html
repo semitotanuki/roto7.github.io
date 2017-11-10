@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+  <html lang="ja">
+
+<head>
+
+<meta charset="UTF-8" />
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<title>ロト7</title>
+
+<script>
+
+
+
+	function roto7(){
+
+		a1 = document.getElementById("A1");
+
+		a1.innerHTML = Math.floor(Math.random() * 37) + 1;
+
+		b1 = document.getElementById("B1");
+
+		b1.innerHTML = Math.floor(Math.random() * 37) + 1;  
+
+		c1 = document.getElementById("C1");
+
+		c1.innerHTML = Math.floor(Math.random() * 37) + 1;    
+
+		d1 = document.getElementById("D1");
+
+		d1.innerHTML = Math.floor(Math.random() * 37) + 1;   
+
+		e1 = document.getElementById("E1");
+
+		e1.innerHTML = Math.floor(Math.random() * 37) + 1;
+
+		f1 = document.getElementById("F1");
+
+		f1.innerHTML = Math.floor(Math.random() * 37) + 1;
+
+		g1 = document.getElementById("G1");
+
+		g1.innerHTML = Math.floor(Math.random() * 37) + 1;    
+
+    
+
+		n = 0;
+
+		a0 = document.Sels.A0.selectedIndex;
+
+		if(a0 == a1.innerHTML){n++;}
+		if(a0 == b1.innerHTML){n++;}
+		if(a0 == c1.innerHTML){n++;}
+		if(a0 == d1.innerHTML){n++;}
+		if(a0 == e1.innerHTML){n++;}
+		if(a0 == f1.innerHTML){n++;}
+		if(a0 == g1.innerHTML){n++;}
+
+
+		b0 = document.Sels.B0.selectedIndex;
+
+	    if(b0 == a1.innerHTML){n++;}
+		if(b0 == b1.innerHTML){n++;}
+		if(b0 == c1.innerHTML){n++;}
+		if(b0 == d1.innerHTML){n++;}
+		if(b0 == e1.innerHTML){n++;}
+		if(b0 == f1.innerHTML){n++;}
+		if(b0 == g1.innerHTML){n++;}
+
+		c0 = document.Sels.C0.selectedIndex;
+
+		if(c0 == a1.innerHTML){n++;}
+		if(c0 == b1.innerHTML){n++;}
+		if(c0 == c1.innerHTML){n++;}
+		if(c0 == d1.innerHTML){n++;}
+		if(c0 == e1.innerHTML){n++;}
+		if(c0 == f1.innerHTML){n++;}
+		if(c0 == g1.innerHTML){n++;}
+
+	  
+
+		d0 = document.Sels.D0.selectedIndex;
+
+		if(d0 == a1.innerHTML){n++;}
+		if(d0 == b1.innerHTML){n++;}
+		if(d0 == c1.innerHTML){n++;}
+		if(d0 == d1.innerHTML){n++;}
+		if(d0 == e1.innerHTML){n++;}
+		if(d0 == f1.innerHTML){n++;}
+		if(d0 == g1.innerHTML){n++;}
+		
+
+		e0 = document.Sels.E0.selectedIndex;
+		
+		if(e0 == a1.innerHTML){n++;}
+		if(e0 == b1.innerHTML){n++;}
+		if(e0 == c1.innerHTML){n++;}
+		if(e0 == d1.innerHTML){n++;}
+		if(e0 == e1.innerHTML){n++;}
+		if(e0 == f1.innerHTML){n++;}
+		if(e0 == g1.innerHTML){n++;}
+
+		f0 = document.Sels.F0.selectedIndex;
+
+	    if(f0 == a1.innerHTML){n++;}
+		if(f0 == b1.innerHTML){n++;}
+		if(f0 == c1.innerHTML){n++;}
+		if(f0 == d1.innerHTML){n++;}
+		if(f0 == e1.innerHTML){n++;}
+		if(f0 == f1.innerHTML){n++;}
+		if(f0 == g1.innerHTML){n++;}
+		
+		g0 = document.Sels.G0.selectedIndex;
+
+	    if(g0 == a1.innerHTML){n++;}
+		if(g0 == b1.innerHTML){n++;}
+		if(g0 == c1.innerHTML){n++;}
+		if(g0 == d1.innerHTML){n++;}
+		if(g0 == e1.innerHTML){n++;}
+		if(g0 == f1.innerHTML){n++;}
+		if(g0 == g1.innerHTML){n++;}
+    
+
+		result = document.getElementById("Result");
+
+		if(n == 0){result.innerHTML = "0";}
+
+		else{result.innerHTML = n + "つ";}
+		
+
+	}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<div id="content">
+
+
+
+  <form name="Sels">
+
+    
+
+    <div id="A">
+
+      <select class="Se" name="A0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="A1">？</p>
+
+    </div>
+
+
+
+    <div id="B">
+
+      <select class="Se" name="B0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="B1">？</p>
+
+    </div>
+
+
+
+    <div id="C">
+
+      <select class="Se" name="C0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="C1">？</p>
+
+    </div>
+
+
+
+    <div id="D">
+
+      <select class="Se" name="D0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="D1">？</p>
+
+    </div>
+
+
+
+    <div id="E">
+
+      <select class="Se" name="E0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="E1">？</p>
+
+    </div>
+
+
+
+    <div id="F">
+
+      <select class="Se" name="F0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="F1">？</p>
+
+    </div>
+
+
+
+    <div id="G">
+
+      <select class="Se" name="G0">
+
+        <script>
+
+          for(i=0;i<=37;i++){document.write('<option>' + i + '</option>');}
+
+        </script>
+
+      </select>
+
+      <p class="Ram" id="G1">？</p>
+
+    </div>
+
+  
+
+  </form>
+
+
+
+    <input type="button" value="決定" onclick="roto7();" id="push">
+
+
+
+    <div id="isOver"><p><span id="Result">0</span>&nbsp;です</p></div>
+
+
+
+</div>
+
+</body>
+
+</html>
